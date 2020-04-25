@@ -8,13 +8,9 @@
                     </figure>
                 </div>
                 <div class="card-content">
-                    <div class="media">
-                        <div class="media-content">
-                            <p class="title is-4 has-text-centered">Abhishek Saini</p>
-                        </div>
-                    </div>
-
                     <div class="content">
+
+                        <p class="title is-4 has-text-centered">Abhishek Saini</p>
                         <a href="mailto:abhishek.saini.0607@gmail.com">abhishek.saini.0607@gmail.com</a>
                         <br>
                         <a href="https://api.whatsapp.com/send?phone=+917982067969">+917982067969</a>

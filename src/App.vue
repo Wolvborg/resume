@@ -14,23 +14,13 @@
             </div>
         </section>
 
-        <section id="nav" class="main navbar is-spaced">
-            <div class="navbar-menu">
-                <div class="navbar-start">
-                    <div class="navbar-item is-tab" v-bind:class="{'is-active':activeName === 'About'}">
-                        <router-link :to="{name:'About'}">About</router-link>
-                    </div>
-
-                    <div class="navbar-item is-tab" v-bind:class="{'is-active':activeName === 'Education'}">
-                        <router-link :to="{name:'Education'}">Education</router-link>
-                    </div>
-
-                    <div class="navbar-item is-tab" v-bind:class="{'is-active':activeName === 'Experience'}">
-                        <router-link :to="{name:'Experience'}">Experience</router-link>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="tabs" class="tabs is-boxed is-centered">
+            <ul>
+                <li v-bind:class="{'is-active':activeName === 'About'}"><router-link :to="{name:'About'}">About</router-link></li>
+                <li v-bind:class="{'is-active':activeName === 'Education'}"><router-link :to="{name:'Education'}">Education</router-link></li>
+                <li v-bind:class="{'is-active':activeName === 'Experience'}"><router-link :to="{name:'Experience'}">Experience</router-link></li>
+            </ul>
+        </div>
 
         <section id="main-content" class="container">
             <router-view/>
@@ -65,6 +55,10 @@
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         user-select: none;
+
+        #tabs{
+            margin-top: 1.5rem;
+        }
 
         #main-content{
             min-height: 600px;
