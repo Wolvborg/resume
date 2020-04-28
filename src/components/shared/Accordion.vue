@@ -8,7 +8,7 @@
             </span>
         </div>
         <transition name="fade">
-            <div class="accordion-content" v-if="isOpen"><slot></slot></div>
+            <div class="accordion-content" v-show="isOpen"><slot></slot></div>
         </transition>
     </div>
 </template>
@@ -39,7 +39,6 @@
             padding: 10px 15px;
             text-align: left;
             border-radius: 10px;
-
             cursor: pointer;
 
             span{
@@ -52,11 +51,11 @@
         }
 
         .accordion-content{
-
+            margin-top: 20px;
         }
 
         .fade-enter-active, .fade-leave-active {
-            transition: opacity .5s;
+            transition: opacity .5s linear;
         }
         .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
             opacity: 0;

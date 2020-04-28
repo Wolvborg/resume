@@ -9,7 +9,6 @@
                 </div>
                 <div class="card-content">
                     <div class="content">
-
                         <p class="title is-4 has-text-centered">Abhishek Saini</p>
                         <a href="mailto:abhishek.saini.0607@gmail.com">abhishek.saini.0607@gmail.com</a>
                         <br>
@@ -23,8 +22,8 @@
                         <br>
                         <span class="logo-links">
                             <a title="Gmail" href="mailto:abhishek.saini.0607@gmail.com"><span class="gmail"><i class="fas fa-envelope fa-2x"></i></span></a>
-                            <a title="Linkedin" href="mailto:abhishek.saini.0607@gmail.com"><span class="linkedin"><i class="fab fa-linkedin fa-2x"></i></span></a>
-                            <a title="FaceBook" href="mailto:abhishek.saini.0607@gmail.com"><span class="facebook"><i class="fab fa-facebook-square fa-2x"></i></span></a>
+                            <a title="Linkedin" href="https://in.linkedin.com/in/abhishek-saini-0607"><span class="linkedin"><i class="fab fa-linkedin fa-2x"></i></span></a>
+                            <a title="FaceBook" href="https://www.facebook.com/wolborg"><span class="facebook"><i class="fab fa-facebook-square fa-2x"></i></span></a>
                         </span>
                     </div>
                 </div>
