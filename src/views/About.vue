@@ -73,7 +73,6 @@
 </script>
 
 <style lang="scss" scoped>
-    @import "src/assets/style/globalVariable";
 
     #about {
 

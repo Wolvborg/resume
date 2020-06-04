@@ -28,7 +28,7 @@
     })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
     @import "../../assets/style/globalVariable";
 
     #accordion {

@@ -7,6 +7,7 @@ import VueRouter, {RouteConfig} from 'vue-router'
 // which is lazy-loaded when the route is visited.
 const About = () => import(/* webpackChunkName: "about" */ '../views/About.vue');
 const Education = () => import(/* webpackChunkName: "education" */ '../views/Education.vue');
+const Skills = () => import(/* webpackChunkName: "skills" */ '../views/Skills.vue');
 const Experience = () => import(/* webpackChunkName: "exp" */ '../views/Experience.vue');
 
 
@@ -30,6 +31,11 @@ const routes: Array<RouteConfig> = [
     path: '/education',
     name: 'Education',
     component: Education
+  },
+  {
+    path: '/skills',
+    name: 'Skills',
+    component: Skills
   },
   {
     path: '/experience',

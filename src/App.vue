@@ -45,7 +45,6 @@
 </script>
 
 <style lang="scss">
-    @import "src/assets/style/globalVariable";
 
     #app {
         -webkit-font-smoothing: antialiased;
