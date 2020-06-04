@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "firebase deploy",
+    "build-deploy": "yarn build && yarn deploy"
   },
   "dependencies": {
     "bulma": "^0.8.2",

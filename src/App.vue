@@ -5,20 +5,21 @@
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">
-                        Resume
-                    </h1>
-                    <h2 class="subtitle">
                         A little About Me....
-                    </h2>
+                    </h1>
+                    <!--<h2 class="subtitle">
+                        A little About Me....
+                    </h2>-->
                 </div>
             </div>
         </section>
 
         <div id="tabs" class="tabs is-boxed is-centered">
             <ul>
-                <li v-bind:class="{'is-active':activeName === 'About'}"><router-link :to="{name:'About'}">About</router-link></li>
-                <li v-bind:class="{'is-active':activeName === 'Education'}"><router-link :to="{name:'Education'}">Education</router-link></li>
-                <li v-bind:class="{'is-active':activeName === 'Experience'}"><router-link :to="{name:'Experience'}">Experience</router-link></li>
+                <li v-bind:class="{'is-active':$route.name === 'About'}"><router-link :to="{name:'About'}">About</router-link></li>
+                <li v-bind:class="{'is-active':$route.name === 'Experience'}"><router-link :to="{name:'Experience'}">Experience</router-link></li>
+                <li v-bind:class="{'is-active':$route.name === 'Skills'}"><router-link :to="{name:'Skills'}">Skills</router-link></li>
+                <li v-bind:class="{'is-active':$route.name === 'Education'}"><router-link :to="{name:'Education'}">Education</router-link></li>
             </ul>
         </div>
 
@@ -40,21 +41,18 @@
   import Vue from 'vue'
 
   export default Vue.extend({
-    computed: {
-      activeName() {
-        // We will see what `params` is shortly
-        return this.$route.name
-      }
-    },
   })
 </script>
 
 <style lang="scss">
+    @import "src/assets/style/globalVariable";
+
     #app {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
         user-select: none;
+        overflow-x: hidden;
 
         #tabs{
             margin-top: 1.5rem;
@@ -62,6 +60,10 @@
 
         #main-content{
             min-height: 600px;
+
+            @include mobile(){
+                padding: 0 1rem;
+            }
         }
 
         #footer {
