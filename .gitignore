@@ -21,3 +21,9 @@ yarn-error.log*
 *.sw?
 
 *.lock
+
+*.cache
+
+package-lock.json
+
+firebase-debug.log

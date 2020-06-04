@@ -60,6 +60,8 @@
         #main-content{
             min-height: 600px;
 
+            margin-bottom: 2rem;
+
             @include mobile(){
                 padding: 0 1rem;
             }
