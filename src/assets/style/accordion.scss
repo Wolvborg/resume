@@ -1,0 +1,44 @@
+#accordion {
+    margin-bottom: 45px;
+
+    .accordion-bar {
+        border: 1px solid $palette3;
+        padding: 10px 15px;
+        text-align: left;
+        border-radius: 10px;
+        cursor: pointer;
+
+        span {
+            color: $palette2;
+
+            &.accordion-icon {
+                float: right;
+            }
+        }
+    }
+
+    .accordion-content {
+        margin-top: 20px;
+    }
+
+    .fade-enter,
+    .fade-leave-to {
+        opacity: 0;
+    }
+
+    .fade-enter-active {
+        opacity: 0.5;
+        transition: all .4s ease-in;
+    }
+
+    .fade-leave-active {
+        opacity: 0.5;
+        transition: all .4s ease-out;
+    }
+
+    .fade-leave,
+    .fade-enter-to {
+        opacity: 1;
+    }
+
+}

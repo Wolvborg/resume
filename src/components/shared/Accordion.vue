@@ -27,38 +27,3 @@
         }
     })
 </script>
-
-<style lang="scss" >
-    @import "../../assets/style/globalVariable";
-
-    #accordion {
-        margin-bottom:45px ;
-
-        .accordion-bar{
-            border: 1px solid $palette3;
-            padding: 10px 15px;
-            text-align: left;
-            border-radius: 10px;
-            cursor: pointer;
-
-            span{
-                color: $palette2;
-
-                &.accordion-icon{
-                    float: right;
-                }
-            }
-        }
-
-        .accordion-content{
-            margin-top: 20px;
-        }
-
-        .fade-enter-active, .fade-leave-active {
-            transition: opacity .5s linear;
-        }
-        .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-            opacity: 0;
-        }
-    }
-</style>

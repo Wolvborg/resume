@@ -59,7 +59,3 @@
         name: "Skills"
     })
 </script>
-
-<style scoped>
-
-</style>

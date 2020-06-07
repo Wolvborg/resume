@@ -32,10 +32,15 @@
     </ol>
 
     <h1 class="title is-2 has-text-primary is-spaced">In Past</h1>
-    <h2 class="subtitle is-4">Stormfront Pvt. Ltd (Apr., 2017 to De., 2017)</h2>
+    <h2 class="subtitle is-4">
+      Stormfront Pvt. Ltd (Apr., 2017 to Dec., 2017)
+    </h2>
     <p>
       Responsible for maintaining US based Android app of
-      <a href="https://play.google.com/store/apps/details?id=com.NetSecure.Paydeo&hl=en_IN">Anywhere Commerce</a>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.NetSecure.Paydeo&hl=en_IN"
+        >Anywhere Commerce</a
+      >
       (formerly known 'Paydeo'). I had mainly worked here on adding new screens,
       editing the current screens or removing any.
     </p>
@@ -49,5 +54,3 @@ export default Vue.extend({
   name: "Experience",
 });
 </script>
-
-<style scoped></style>

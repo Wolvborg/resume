@@ -1,15 +1,12 @@
 <template>
     <div id="app">
 
-        <section class="hero is-primary">
+        <section id="header" class="hero is-primary">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">
                         A little About Me....
                     </h1>
-                    <!--<h2 class="subtitle">
-                        A little About Me....
-                    </h2>-->
                 </div>
             </div>
         </section>
@@ -44,39 +41,3 @@
   })
 </script>
 
-<style lang="scss">
-
-    #app {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        user-select: none;
-        overflow-x: hidden;
-
-        #tabs{
-            margin-top: 1.5rem;
-        }
-
-        #main-content{
-            min-height: 600px;
-
-            margin-bottom: 2rem;
-
-            @include mobile(){
-                padding: 0 1rem;
-            }
-        }
-
-        #footer {
-            .heart {
-                color: red;
-                font-weight: 800;
-            }
-
-            .bulma {
-                color: #00d1b2;
-                font-weight: 800;
-            }
-        }
-    }
-</style>
