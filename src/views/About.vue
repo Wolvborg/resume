@@ -1,6 +1,6 @@
 <template>
-  <div id="about" class="columns">
-    <div class="column is-3">
+  <div id="about" class="columns is-mobile">
+    <div class="column is-narrow">
       <div class="card">
         <div class="card-image">
           <figure class="image is-4by5">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-    <div class="column is-9">
+    <div class="column">
       <div
         class="content is-medium has-text-left-desktop has-text-centered-mobile"
       >
