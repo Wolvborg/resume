@@ -58,7 +58,13 @@
             .content {
                 p {
                     em {
-                        color: #00d1b2;
+                        &.bootstrap{
+                            color:#7952b3
+                        }
+
+                        &.bulma{
+                            color: #00d1b2;
+                        }
                     }
                 }
             }

@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="columns is-mobile">
+  <div id="about" class="columns">
     <div class="column is-narrow">
       <div class="card">
         <div class="card-image">
@@ -19,10 +19,6 @@
             >
             <br />
             <time datetime="1995-03-06">6 Mar 1995</time>
-            <br />
-            <span>WZ300, Sadhnagar</span>
-            <br />
-            <span>Palam, New Delhi</span>
             <br />
             <span class="logo-links">
               <a title="Gmail" href="mailto:abhishek.saini.0607@gmail.com"
@@ -58,7 +54,7 @@
         <p>
           A detailed and highly capable Front-end Web Developer with more than
           two years of hands-on experience in NodeJS and VueJS front-end
-          framework, popular CSS framework like Bootstrap and <em>Bulma</em>.
+          framework, popular CSS framework like <em class="bootstrap">Bootstrap</em> and <em class="bulma">Bulma</em>.
         </p>
       </div>
     </div>
@@ -69,7 +65,7 @@
 // @ is an alias to /src
 
 import Vue from "vue";
-import img from "@/assets/img/PHOTO.png";
+import img from "@/assets/img/PHOTO.webp";
 
 export default Vue.extend({
   name: "About",

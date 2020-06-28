@@ -65,7 +65,7 @@
           </p>
         </div>
         <div class="ss-table table">
-          <Table v-bind:tableData="grad" />
+          <Table v-bind:tableData="ss" />
         </div>
       </div>
     </Accordion>
