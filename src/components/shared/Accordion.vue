@@ -8,7 +8,7 @@
             </span>
         </div>
         <transition name="fade">
-            <div class="accordion-content" v-show="isOpen"><slot></slot></div>
+            <div class="accordion-content" v-bind:class="{'open':isOpen}"><slot></slot></div>
         </transition>
     </div>
 </template>

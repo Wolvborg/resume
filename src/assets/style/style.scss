@@ -6,7 +6,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     user-select: none;
-    overflow-x: hidden;
 
     #tabs {
         margin-top: 1.5rem;
@@ -91,6 +90,7 @@
 
                     .table {
                         width: 30%;
+                        background-color: transparent;
                     }
 
                     @include mobile(){
