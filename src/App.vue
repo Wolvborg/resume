@@ -11,17 +11,8 @@
             </div>
         </section>
 
-        <div id="tabs" class="tabs is-boxed is-centered">
-            <ul>
-                <li v-bind:class="{'is-active':$route.name === 'About'}"><router-link :to="{name:'About'}">About</router-link></li>
-                <li v-bind:class="{'is-active':$route.name === 'Experience'}"><router-link :to="{name:'Experience'}">Experience</router-link></li>
-                <li v-bind:class="{'is-active':$route.name === 'Skills'}"><router-link :to="{name:'Skills'}">Skills</router-link></li>
-                <li v-bind:class="{'is-active':$route.name === 'Education'}"><router-link :to="{name:'Education'}">Education</router-link></li>
-            </ul>
-        </div>
-
         <section id="main-content" class="container">
-            <router-view/>
+           
         </section>
 
         <footer id="footer" class="footer">
@@ -40,4 +31,36 @@
   export default Vue.extend({
   })
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/style/globalVariable.scss';
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    user-select: none;
+
+    #main-content {
+        min-height: calc(100vh - 132px - 168px);
+
+        @include mobile() {
+            padding: 0 1rem;
+        }
+
+    }
+
+    #footer {
+        .heart {
+            color: red;
+            font-weight: 800;
+        }
+
+        .bulma {
+            color: #00d1b2;
+            font-weight: 800;
+        }
+    }
+}
+</style>
 
