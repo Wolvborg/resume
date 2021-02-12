@@ -53,7 +53,7 @@
         <h2 class="is-3">Summary</h2>
         <p>
           A detailed and highly capable Front-end Web Developer with more than
-          two years of hands-on experience in NodeJS and VueJS front-end
+          two years of hands-on experience in HTML, CSS, Javascript, VueJS & ReactJS front-end
           framework, popular CSS framework like <em class="bootstrap">Bootstrap</em> and <em class="bulma">Bulma</em>.
         </p>
       </div>
