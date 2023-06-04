@@ -11,20 +11,18 @@ $palette3: #3e432e;
 $palette4: #000000;
 
 // Update Bulma's global variables
-$family-sans-serif: "Overlock", sans-serif;
+$family-sans-serif: 'Overlock', sans-serif;
 $primary: $palette1;
 $secondary: #5329d1;
 
 //Links
-$link:  $palette2;
-$link-active:  $palette3;
+$link: $palette2;
+$link-active: $palette3;
 $link-focus: $palette3;
 $link-hover: $palette3;
 
 $widescreen-enabled: false;
 $fullhd-enabled: false;
-
-
 
 // Update some of Bulma's component variables
 $control-border-width: 2px;
@@ -35,6 +33,5 @@ $navbar-item-hover-color: $secondary;
 
 $navbar-item-hover-background-color: $palette1;
 
-
 // Import only what you need from Bulma
-@import "node_modules/bulma/bulma";
+@import 'node_modules/bulma/bulma';

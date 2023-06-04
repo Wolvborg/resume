@@ -29,16 +29,12 @@
                     <td class="value">65Kg</td>
                   </tr>
                   <tr>
-                    <td class="has-text-weight-semibold">
-                      Highest Qualification
-                    </td>
+                    <td class="has-text-weight-semibold">Highest Qualification</td>
                     <td class="value">B.Tech (CSE) 2017</td>
                   </tr>
                   <tr>
                     <td class="has-text-weight-semibold">College</td>
-                    <td class="value">
-                      Noida Institute of Engineering & Technology
-                    </td>
+                    <td class="value">Noida Institute of Engineering & Technology</td>
                   </tr>
                   <tr>
                     <td class="has-text-weight-semibold">Senior High School</td>
@@ -51,8 +47,8 @@
                   <tr>
                     <td class="has-text-weight-semibold">Job Details</td>
                     <td class="value">
-                      Working as an UI developer in Trek India, a subsidiary of
-                      Trek Bicycle Corporation USA
+                      Working as an UI developer in Trek India, a subsidiary of Trek Bicycle
+                      Corporation USA
                     </td>
                   </tr>
                 </tbody>
@@ -72,30 +68,22 @@
                     <td class="value">Anita Saini</td>
                   </tr>
                   <tr>
-                    <td class="has-text-weight-semibold">
-                      Father's Occupation
-                    </td>
+                    <td class="has-text-weight-semibold">Father's Occupation</td>
                     <td class="value">
-                      Assitant Bank Maneger in Punjab National Bank, New Delhi.
-                      Served In Indian Air Force for 20 Years
+                      Assitant Bank Maneger in Punjab National Bank, New Delhi. Served In Indian Air
+                      Force for 20 Years
                     </td>
                   </tr>
                   <tr>
-                    <td class="has-text-weight-semibold">
-                      Father Qualification
-                    </td>
+                    <td class="has-text-weight-semibold">Father Qualification</td>
                     <td class="value">B.Tech (CSE) 2017</td>
                   </tr>
                   <tr>
-                    <td class="has-text-weight-semibold">
-                      Mother's Occupation
-                    </td>
+                    <td class="has-text-weight-semibold">Mother's Occupation</td>
                     <td class="value">Homemaker</td>
                   </tr>
                   <tr>
-                    <td class="has-text-weight-semibold">
-                      Mother's Qualification
-                    </td>
+                    <td class="has-text-weight-semibold">Mother's Qualification</td>
                     <td class="value">BA in Home Science</td>
                   </tr>
                   <tr>
@@ -105,8 +93,8 @@
                   <tr>
                     <td class="has-text-weight-semibold">Job Details</td>
                     <td class="value">
-                      Working as an UI developer in Trek India, a subsidiary of
-                      Trek Bicycle Corporation USA
+                      Working as an UI developer in Trek India, a subsidiary of Trek Bicycle
+                      Corporation USA
                     </td>
                   </tr>
                   <tr>
@@ -120,14 +108,16 @@
           <div class="column is-4"><div class="box">Second column</div></div>
         </div>
       </div>
-      <div class="hiding" v-else><h1 class="title is-1">You don't have the correct password</h1></div>
+      <div class="hiding" v-else>
+        <h1 class="title is-1">You don't have the correct password</h1>
+      </div>
     </section>
 
     <footer id="footer" class="footer">
       <div class="content has-text-centered">
         <p class="has-text-white-ter">
-          Made With <em class="heart">&hearts;</em> &
-          <em class="bulma">Bulma</em> by Abhishek Saini.
+          Made With <em class="heart">&hearts;</em> & <em class="bulma">Bulma</em> by Abhishek
+          Saini.
         </p>
       </div>
     </footer>
@@ -135,48 +125,47 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+  import Vue from 'vue';
 
-export default Vue.extend({
-  name: "App",
-  data() {
-    return {
-      isAuthenticated: false,
-    };
-  },
-  created(){
-    const result = window.prompt('Enter the Password Provided');
-    this.isAuthenticated = result === 'AnitaSaini'
-  }
-});
+  export default Vue.extend({
+    name: 'App',
+    data() {
+      return {
+        isAuthenticated: false,
+      };
+    },
+    created() {
+      const result = window.prompt('Enter the Password Provided');
+      this.isAuthenticated = result === 'AnitaSaini';
+    },
+  });
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/style/globalVariable.scss";
+  @import '@/assets/style/globalVariable.scss';
 
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  user-select: none;
+  #app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    user-select: none;
 
-  #main-content {
-    min-height: calc(100vh - 150px - 162px);
-    padding: 1.5rem 1rem;
-  }
-
-  #footer {
-    background-color: #212121;
-    .heart {
-      color: red;
-      font-weight: 800;
+    #main-content {
+      min-height: calc(100vh - 150px - 162px);
+      padding: 1.5rem 1rem;
     }
 
-    .bulma {
-      color: #00d1b2;
-      font-weight: 800;
+    #footer {
+      background-color: #212121;
+      .heart {
+        color: red;
+        font-weight: 800;
+      }
+
+      .bulma {
+        color: #00d1b2;
+        font-weight: 800;
+      }
     }
   }
-}
 </style>
-
