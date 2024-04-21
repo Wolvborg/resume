@@ -8,7 +8,7 @@ export default {
       'primary-fade': '#EEF6E4',
       black: '#000',
       white: '#fff',
-      grey: '#808080',
+      grey: '#b1b1b1',
     },
     extend: {},
   },
