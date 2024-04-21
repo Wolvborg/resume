@@ -10,7 +10,12 @@ export default {
       white: '#fff',
       grey: '#b1b1b1',
     },
-    extend: {},
+    extend: {
+      flex: {
+        35: '1 0 35%',
+        65: '1 0 65%',
+      },
+    },
   },
   plugins: [],
 };

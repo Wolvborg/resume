@@ -29,7 +29,7 @@
 
 <template>
   <main class="flex h-screen">
-    <div class="bg-primary-fade w-2/5 p-3">
+    <div class="bg-primary-fade flex-35 p-3">
       <div class="text-center mb-4">
         <p class="title">Abhishek Saini</p>
         <p class="sub-title">(Frontend Web Developer)</p>
@@ -98,7 +98,7 @@
         </div>
       </div>
     </div>
-    <div class="p-3">
+    <div class="p-3 flex-65">
       <div class="mb-4">
         <section-title> WORK EXPERIENCE</section-title>
 
