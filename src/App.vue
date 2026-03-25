@@ -25,8 +25,6 @@
   ]);
 
   const tool = ref([
-    'Liquid',
-    'Shopify',
     'Lighthouse',
     'PageSpeed Insights',
     'Vue DevTools',
@@ -40,6 +38,8 @@
     'Postman',
     'Prisma',
     'Firebase',
+    'Liquid',
+    'Shopify',
   ]);
 </script>
 
@@ -51,25 +51,17 @@
         <p class="sub-title">(Frontend Web Developer)</p>
       </div>
 
-      <div class="border-2 p-2 border-primary rounded text-sm flex justify-around mb-4">
-        <a href="mailto:abhishek.saini.0607@gmail.com">
-          <i class="fa-solid fa-envelope fa-xl text-primary"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/abhishek-saini-0607/">
-          <i class="fa-brands fa-linkedin fa-xl text-primary"></i>
-        </a>
-        <a href="https://github.com/Wolvborg">
-          <i class="fa-brands fa-github fa-xl text-primary"></i>
-        </a>
-        <a href="tel:+917982067969">
-          <i class="fa-solid fa-phone fa-xl text-primary"></i>
-        </a>
+      <div
+        class="border-2 px-2 py-1 border-primary rounded text-xs flex flex-col items-center mb-4"
+      >
+        <a href="mailto:abhishek.saini.0607@gmail.com">abhishek.saini.0607@gmail.com</a>
+        <a href="tel:+917982067969">+917982067969</a>
       </div>
 
       <div class="mb-4">
         <section-title>About</section-title>
         <p class="content">
-          Frontend Web Developer with 6.5+ years of experience specializing in Vue.js, Nuxt.js, and
+          Frontend Web Developer with 7.5+ years of experience specializing in Vue.js, Nuxt.js, and
           React.js. Skilled in building scalable, high-performance e-commerce solutions. Passionate
           about creating elegant UIs and exploring backend technologies with Node.js, Express, and
           NestJS.
@@ -112,6 +104,15 @@
           <p class="content">High School & Senior Secondary High School</p>
         </div>
       </div>
+
+      <div class="border-2 p-2 border-primary rounded text-sm flex justify-around mb-4">
+        <a href="https://www.linkedin.com/in/abhishek-saini-0607/">
+          <i class="fa-brands fa-linkedin fa-xl text-primary"></i>
+        </a>
+        <a href="https://github.com/Wolvborg">
+          <i class="fa-brands fa-github fa-xl text-primary"></i>
+        </a>
+      </div>
     </div>
     <div class="p-3 flex-65">
       <div class="mb-4">
@@ -119,8 +120,25 @@
 
         <div class="mb-2">
           <heading>
+            <a href="https://l7informatics.com/">L7 Informatics</a>
+            <template #extra>(14/07/2025 - Present)</template>
+          </heading>
+          <ul class="content list-disc pl-6">
+            <li>
+              Acted as technical lead for frontend initiatives across multiple projects and teams.
+            </li>
+            <li>Onboarded and trained new engineers on codebase, workflows, and tooling.</li>
+            <li>
+              Led peer code reviews, mentoring junior developers and improving overall code quality
+              and team productivity.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-2">
+          <heading>
             <a href="https://anatta.io/"> Anatta Designs(Shopify Plus Agency)</a>
-            <template #extra>(19/02/2024 - Present)</template>
+            <template #extra>(19/02/2024 - 27/06/2025)</template>
           </heading>
           <ul class="content list-disc pl-6">
             <li>
