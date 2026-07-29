@@ -4,7 +4,7 @@
 
 @layer components {
   .heading {
-    @apply text-sm-plus text-black font-semibold mb-1;
+    @apply text-base text-black font-semibold mb-1;
     flex: 1 0 60%;
   }
 
@@ -13,14 +13,6 @@
   }
 
   .title {
-    @apply font-semibold text-3xl font-medium;
-  }
-
-  .sub-title {
-    @apply text-grey text-base font-normal mb-2;
-  }
-
-  .content {
-    @apply text-black text-xs-plus;
+    @apply font-semibold text-3xl;
   }
 }

@@ -1,282 +1,300 @@
-<script setup>
-  import { ref } from 'vue';
-  import SectionTitle from '@/components/section-title.vue';
-  import Tags from '@/components/tags.vue';
-  import Heading from '@/components/heading.vue';
+<script setup lang="ts">
+  import ExperienceSection from './components/experience-section.vue';
+  import Heading from './components/heading.vue';
+  import Section from './components/section.vue';
 
-  const programmingLanguage = ref(['JavaScript', 'TypeScript', 'HTML', 'CSS/SCSS', 'Bash']);
+  const resume = {
+    personal: {
+      name: 'Abhishek Saini',
+      title: 'Senior Frontend Engineer',
+      phone: '+91 7982067969',
+      email: 'abhishek.saini.0607@gmail.com',
+      location: 'Bengaluru, Karnataka, India',
+      linkedin: 'https://www.linkedin.com/in/abhishek-saini-0607',
+      github: 'https://github.com/Wolvborg',
+    },
 
-  const libs = ref([
-    'VueJS',
-    'ReactJS',
-    'NodeJS',
-    'ExpressJS',
-    'NestJS',
-    'Vuex',
-    'Vue Router',
-    'Vite',
-    'Webpack',
-    'Tailwind',
-    'Bootstrap',
-    'Nuxt',
-    'Next',
-    'AlpineJS',
-    'Petite Vue',
-  ]);
+    summary:
+      'Senior Frontend Engineer with 8+ years of experience building headless and enterprise web applications using Vue.js, Nuxt.js, and TypeScript. Led frontend delivery across enterprise SPA platforms, reusable component libraries, and Vue 2 → Vue 3 migrations, while mentoring engineers and driving code review and testing standards. Experienced collaborating with cross-functional and distributed engineering teams in Agile/Scrum environments.',
 
-  const tool = ref([
-    'Lighthouse',
-    'PageSpeed Insights',
-    'Vue DevTools',
-    'Redux DevTools',
-    'Web Vitals',
-    'Vue Test Utils',
-    'Jest',
-    'Vercel',
-    'Netlify',
-    'Docker',
-    'Postman',
-    'Prisma',
-    'Firebase',
-    'Liquid',
-    'Shopify',
-  ]);
+    skills: [
+      {
+        title: 'Frontend Ecosystem',
+        technologies: [
+          'Vue',
+          'Nuxt',
+          'Vuex',
+          'Pinia',
+          'Vue Router',
+          'React',
+          'Nextjs',
+          'Alpinejs',
+          'Ag-grid',
+          'Storybook',
+        ],
+      },
+      {
+        title: 'Languages & Styling',
+        technologies: ['TS', 'JS (ES6+)', 'Python', 'CSS/SCSS', 'Tailwind', 'Bulma', 'BEM'],
+      },
+      {
+        title: 'Headless & Architecture',
+        technologies: [
+          'Headless Architecture',
+          'Component Driven Development',
+          'Reusable Components',
+          'Storybook',
+          'Design Systems',
+          'SSR',
+          'SPA',
+        ],
+      },
+      {
+        title: 'Performance & SEO',
+        technologies: [
+          'Core Web Vitals',
+          'Lighthouse',
+          'Technical SEO',
+          'SEO',
+          'Lazy Loading',
+          'Code Splitting',
+          'Performance Optimization',
+          'Mobile-first Development',
+        ],
+      },
+      {
+        title: 'Testing & Quality',
+        technologies: ['Jest', 'Vue Test Utils', 'Cypress', 'Code Reviews', 'Accessibility (WCAG)'],
+      },
+      {
+        title: 'APIs & Backend',
+        technologies: [
+          'REST',
+          'Nodejs',
+          'Express',
+          'Flask',
+          'Shopify Admin API',
+          'Shopify Storefront API',
+        ],
+      },
+    ],
+
+    experience: [
+      {
+        company: 'L7 Informatics',
+        roles: [
+          {
+            designation: 'Sr. FE Developer',
+            duration: '2025-07 – 2026-06',
+            responsibilities: [
+              'Led a frontend team of 4, reviewing pull requests and driving technical decisions across the team.',
+              'Mentored developers and assigned development tasks to ensure timely delivery of enterprise ELN platform features.',
+              'Implemented and customized AG Grid as a core component across multiple modules, including advanced data tables, custom cell renderers, filtering, and sorting.',
+              'Built reusable Vue 3 composables to improve maintainability across the platform.',
+              "Established the initial Cypress end-to-end testing framework from scratch, laying the foundation for the team's future test coverage.",
+              'Partnered closely with backend engineers using Flask to align frontend features with API contracts.',
+            ],
+          },
+        ],
+      },
+      {
+        company: 'Anatta Designs',
+        roles: [
+          {
+            designation: 'UI Developer',
+            duration: '2024-02 – 2025-06',
+            responsibilities: [
+              'Built Shopify Plus storefronts from scratch, converting UI designs into configurable, reusable Shopify themes and sections in close collaboration with UX designers and clients.',
+              'Integrated Shopify Admin and Storefront APIs to support custom storefront functionality.',
+              'Optimized storefront performance and Core Web Vitals with a mobile-first approach, improving SEO performance by approximately 20% and lifting Lighthouse scores.',
+              'Delivered multiple Shopify stores ahead of schedule.',
+            ],
+          },
+        ],
+      },
+      {
+        company: 'Trek Bikes',
+        roles: [
+          {
+            designation: 'Sr. UI Engineer',
+            duration: '2023 – 2024-02',
+            responsibilities: [
+              'Promoted from Software Engineer to Senior UI Engineer after ~2 years for consistent delivery on enterprise Vue applications.',
+              'Built 30+ reusable application components and developed 5+ Storybook components to support a scalable internal design system (PDL Component Library).',
+              'Contributed to the Vue 2 → Vue 3 migration and introduced Pinia into migrated applications, improving state management and maintainability.',
+              'Created reusable composables and implemented automated unit testing (Jest, Vue Test Utils) on SAP Hybris–integrated systems.',
+              'Contributed to Project One, a large-scale SPA for bike customization.',
+            ],
+          },
+          {
+            designation: 'Software Engineer',
+            duration: '2020-12 – 2023',
+            responsibilities: [
+              'Developed enterprise Vue applications integrated with SAP Hybris, building reusable UI components used across the platform.',
+              'Developed Storybook components and implemented automated unit testing to strengthen frontend code quality.',
+            ],
+          },
+        ],
+      },
+      {
+        company: 'BitQit Pvt. Ltd.',
+        roles: [
+          {
+            designation: 'Software Engineer',
+            duration: '2019-07 – 2020-11',
+            responsibilities: [
+              'Promoted from Associate Software Developer to Software Engineer after ~1 year in recognition of delivery across client integrations.',
+              'Delivered SearchTap integrations for 30+ e-commerce client brands, each with unique requirements across Shopify, Magento, WordPress, and OpenCart.',
+              'Built Node.js indexing services and Vue.js frontend integrations, and integrated Shopify APIs to support client search functionality.',
+            ],
+          },
+          {
+            designation: 'Associate Software Developer',
+            duration: '2018-07 – 2019-07',
+            responsibilities: [
+              'Integrated SearchTap into Shopify, Magento, WordPress, and OpenCart storefronts for client projects.',
+              'Converted PSD designs into responsive HTML/CSS and developed Vue.js frontend integrations.',
+            ],
+          },
+        ],
+      },
+    ],
+
+    projects: [
+      {
+        name: 'HelloParent',
+        role: 'Lead Frontend Developer',
+        responsibilities: [
+          'Built the complete frontend using Nuxt 3 and Tailwind CSS, then migrated the application to Next.js.',
+          'Optimized SEO and Core Web Vitals through lazy loading, improving Lighthouse score and page speed.',
+        ],
+      },
+      {
+        name: 'CoversCart',
+        role: 'Frontend Developer',
+        responsibilities: [
+          'Developed the Vue.js frontend and migrated the store from OpenCart to Shopify.',
+        ],
+      },
+    ],
+
+    education: [
+      {
+        degree: 'Bachelor of Technology, CSE',
+        institute: 'NIET, Greater Noida',
+        duration: '2013 – 2017',
+      },
+      {
+        degree: 'Senior Secondary (11th & 12th)',
+        institute: 'Kendriya Vidyalaya, Delhi Cantt',
+        duration: '2010 – 2012',
+      },
+    ],
+
+    certifications: [
+      'Liquid Storefronts for Theme Developers — Shopify',
+      'Shopify Development Fundamentals — Shopify',
+    ],
+  };
 </script>
 
 <template>
-  <main class="flex h-screen">
-    <div class="bg-primary-fade flex-35 p-3">
-      <div class="text-center mb-4">
-        <p class="title">Abhishek Saini</p>
-        <p class="sub-title">(Frontend Web Developer)</p>
-      </div>
+  <main class="resume">
+    <!-- ================= Hero ================= -->
 
-      <div
-        class="border-2 px-2 py-1 border-primary rounded text-xs flex flex-col items-center mb-4"
-      >
-        <a href="mailto:abhishek.saini.0607@gmail.com">abhishek.saini.0607@gmail.com</a>
-        <a href="tel:+917982067969">+917982067969</a>
-      </div>
-
-      <div class="mb-4">
-        <section-title>About</section-title>
-        <p class="content">
-          Frontend Web Developer with 7.5+ years of experience specializing in Vue.js, Nuxt.js, and
-          React.js. Skilled in building scalable, high-performance e-commerce solutions. Passionate
-          about creating elegant UIs and exploring backend technologies with Node.js, Express, and
-          NestJS.
-        </p>
-      </div>
-
-      <div class="mb-4">
-        <section-title>Skills</section-title>
-        <div class="mb-2">
-          <heading>Programming Languages/Scripts</heading>
-          <tags :tags="programmingLanguage" />
-        </div>
-
-        <div class="mb-2">
-          <heading>Frameworks/Libraries</heading>
-          <tags :tags="libs" />
-        </div>
-
-        <div class="mb-2">
-          <heading>Tools</heading>
-          <tags :tags="tool" />
-        </div>
-      </div>
-
+    <header class="flex flex-row justify-between">
       <div>
-        <section-title>Education</section-title>
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.niet.co.in/"> NIET, Greater Noida </a>
-            <template #extra>(2013-2017)</template>
-          </heading>
-          <p class="content">Bachelors of Technology, Computer Science Engineering</p>
-        </div>
+        <h1 class="text-2xl text-primary">{{ resume.personal.name }}</h1>
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://no1delhicantt.kvs.ac.in/"> Kendriya Vidyalaya, Delhi Cantt. </a>
-            <template #extra>(2010-2012)</template>
-          </heading>
-          <p class="content">High School & Senior Secondary High School</p>
-        </div>
+        <h2 class="text-lg">{{ resume.personal.title }}</h2>
+        <span class="text-sm">({{ resume.personal.location }})</span>
       </div>
 
-      <div class="border-2 p-2 border-primary rounded text-sm flex justify-around mb-4">
-        <a href="https://www.linkedin.com/in/abhishek-saini-0607/">
-          <i class="fa-brands fa-linkedin fa-xl text-primary"></i>
+      <div class="flex text-right flex-col">
+        <a :href="`tel:${resume.personal.phone}`">
+          {{ resume.personal.phone }}
         </a>
-        <a href="https://github.com/Wolvborg">
-          <i class="fa-brands fa-github fa-xl text-primary"></i>
+        <a :href="`mailto:${resume.personal.email}`">
+          {{ resume.personal.email }}
+        </a>
+
+        <a :href="resume.personal.linkedin" target="_blank" rel="noopener noreferrer">
+          {{ resume.personal.linkedin }}
+        </a>
+
+        <a :href="resume.personal.github" target="_blank" rel="noopener noreferrer">
+          {{ resume.personal.github }}
         </a>
       </div>
-    </div>
-    <div class="p-3 flex-65">
-      <div class="mb-4">
-        <section-title> WORK EXPERIENCE</section-title>
+    </header>
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://l7informatics.com/">L7 Informatics</a>
-            <template #extra>(14/07/2025 - Present)</template>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>
-              Acted as technical lead for frontend initiatives across multiple projects and teams.
-            </li>
-            <li>Onboarded and trained new engineers on codebase, workflows, and tooling.</li>
-            <li>
-              Led peer code reviews, mentoring junior developers and improving overall code quality
-              and team productivity.
-            </li>
-          </ul>
-        </div>
+    <!-- ================= Summary ================= -->
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://anatta.io/"> Anatta Designs(Shopify Plus Agency)</a>
-            <template #extra>(19/02/2024 - 27/06/2025)</template>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>
-              Developing custom Shopify themes for high-growth e-commerce brands, ensuring
-              pixel-perfect implementations from Figma designs.
-            </li>
-            <li>
-              Leveraging AlpineJS, Petite-Vue, Vue and React to build interactive and lightweight UI
-              components for improved performance.
-            </li>
-            <li>Implementing Liquid templating for dynamic and modular Shopify themes.</li>
-            <li>
-              Conducting code reviews and performance optimizations to ensure high-speed,
-              accessible, and SEO-friendly Shopify stores.
-            </li>
-          </ul>
-        </div>
+    <Section title="Summary">
+      <p>{{ resume.summary }}</p>
+    </Section>
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.trekbikes.com/">Trek Bicycle India</a>
-            <template #extra>(07/12/2020 - 15/02/2024)</template>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>
-              Migrated a legacy codebase from Vue 2 to Vue 3, improving performance and code
-              maintainability.
-            </li>
-            <li>
-              Creating/modifying reusable & scalable components based on business requirements on
-              <span class="text-primary">StoryBook</span>.
-            </li>
-            <li>
-              Implemented global state management using Vuex and Pinia, enhancing data flow
-              efficiency.
-            </li>
-            <li>
-              Wrote Jest unit tests for components, achieving 95%+ test coverage and improving code
-              reliability.
-            </li>
-            <li>
-              Reviewed and optimized pull requests, enforcing clean coding standards and best
-              practices.
-            </li>
-            <li>
-              Made significant contributions to
-              <a
-                class="text-primary underline"
-                href="https://www.trekbikes.com/us/en_US/project-one/"
-              >
-                Project-One
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- ================= Skills ================= -->
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.searchtap.io/">BitQit Pvt. Ltd</a>
-            <template #extra>(07/07/2018 - 27/11/2020)</template>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>Implemented SearchTap API on e-commerce CMS websites</li>
-            <li>Utilized Vue and React to integrate SearchTap API</li>
-            <li>Converted client-approved PSD designs into HTML and CSS (SCSS) layouts</li>
-            <li>Employed Webpack to bundle the JavaScript code for deployment</li>
-            <li>
-              Collaborated with prominent clients such as
-              <a class="text-primary underline" href="https://www.jackjones.in/"> Jack & Jones </a>
-              ,
-              <a class="text-primary underline" href="https://www.themancompany.com/">
-                The Man Company
-              </a>
-              ,
-              <a class="text-primary underline" href="https://www.gonoise.com/"> GoNoise </a>
-              ,
-              <a class="text-primary underline" href="https://www.itcstore.in/"> ITC Store </a>
-            </li>
-          </ul>
-        </div>
+    <Section title="Skills">
+      <div v-for="skill in resume.skills" :key="skill.title">
+        <span class="font-semibold">{{ skill.title }} - </span>
 
-        <div class="mb-2">
-          <heading>
-            <a>StormFront Consultancy</a>
-            <template #extra>(01/05/2017 - 29/12/2017)</template>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>
-              Paydeo GO (Now Anywhere Commence) – Implemented features like three finger swipes to
-              send diagnostics, tutorial screens for the first use of the app and fixed various
-              bugs.
-            </li>
-            <li>ButterFli – Made UI/UX Changes and fixed bugs</li>
-          </ul>
-        </div>
+        <span>
+          {{ skill.technologies.join(', ') }}
+        </span>
       </div>
+    </Section>
 
-      <div class="mb-4">
-        <section-title> Side Projects</section-title>
+    <!-- ================= Experience ================= -->
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.npmjs.com/package/madebyme"> madebyme </a>(Still in development)
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>
-              NPM package to log projects author's name in console or store it in localstorage
-            </li>
-            <li>
-              Monorepo and TypeScript based, can be installed in Vue2, Vue3, Web, Nuxt & Next
-              projects
-            </li>
-          </ul>
-        </div>
+    <experience-section :experiences="resume.experience" />
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.helloparent.com/"> Hello-Parent </a>
-          </heading>
-          <ul class="content list-disc pl-6">
-            <li>Nextjs SSR Application on Vercel</li>
-            <li>
-              Initially developed the entire application using Nuxt 2 and Tailwind, deployed on
-              Vercel, later migrated to Nextjs on client's demand.
-            </li>
-          </ul>
-        </div>
+    <!-- ================= Projects ================= -->
 
-        <div class="mb-2">
-          <heading>
-            <a href="https://www.cotriad.ai/"> Cotriad </a>
-          </heading>
-          <p class="content">
-            Handling the Backend operation using NodeJS/ExpressJS and AWS tools and Front end
-            operation using ReactJS
-          </p>
-        </div>
-      </div>
-    </div>
+    <Section title="Personal Projects">
+      <article v-for="project in resume.projects" :key="project.name">
+        <Heading>
+          {{ project.name }}
+          <template #extra>
+            <span v-if="project.role">{{ project.role }} </span>
+          </template>
+        </Heading>
+
+        <ol class="list-disc list-inside">
+          <li v-for="item in project.responsibilities" :key="item">
+            {{ item }}
+          </li>
+        </ol>
+      </article>
+    </Section>
+
+    <!-- ================= Education ================= -->
+
+    <Section title="Education">
+      <article v-for="education in resume.education" :key="education.degree">
+        <Heading>
+          {{ education.degree }}
+
+          <template #extra>
+            <span>
+              {{ education.institute }}
+              (<small>{{ education.duration }}</small
+              >)
+            </span>
+          </template>
+        </Heading>
+      </article>
+    </Section>
+
+    <!-- ================= Certifications ================= -->
+
+    <Section title="Certifications">
+      <ol class="list-disc list-inside">
+        <li v-for="certification in resume.certifications" :key="certification">
+          {{ certification }}
+        </li>
+      </ol>
+    </Section>
   </main>
 </template>
