@@ -14,9 +14,9 @@
       <template v-if="isPromoted(experience)">
         <Heading>{{ experience.company }}</Heading>
         <div v-for="role in experience.roles" :key="role.designation">
-          <span class="text-neutral-700">{{ role.designation }}</span> -
+          <span class="text-neutral-800 italic">{{ role.designation }}</span> -
           <span class="text-sm text-neutral-500">{{ role.duration }}</span>
-          <ol class="list-disc list-inside">
+          <ol class="list-disc list-inside content">
             <li v-for="item in role.responsibilities" :key="item" class="pl-2">
               {{ item }}
             </li>
@@ -25,8 +25,8 @@
       </template>
       <template v-else>
         <div>
-          <Heading>{{ experience.company }} </Heading>
-          <span class="text-neutral-700">{{ experience.roles[0].designation }}</span> -
+          <Heading>{{ experience.company }}</Heading>
+          <span class="text-neutral-800 italic">{{ experience.roles[0].designation }}</span> -
           <span class="text-sm text-neutral-500">{{ experience.roles[0].duration }}</span>
 
           <ol class="list-disc list-inside content">

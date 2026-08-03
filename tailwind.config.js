@@ -11,14 +11,6 @@ export default {
         white: '#fff',
         grey: '#b1b1b1',
       },
-      flex: {
-        35: '1 0 35%',
-        65: '1 0 65%',
-      },
-      fontSize: {
-        'sm-plus': ['0.938rem', '1.375rem'],
-        'xs-plus': ['0.813rem', '1.125rem'],
-      },
     },
   },
   plugins: [],

@@ -11,8 +11,7 @@
   .section-title {
     @apply text-primary font-semibold text-lg uppercase;
   }
-
-  .title {
-    @apply font-semibold text-3xl;
+  .content {
+    @apply text-sm;
   }
 }

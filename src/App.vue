@@ -15,14 +15,12 @@
     },
 
     summary:
-      'Senior Frontend Engineer with 8+ years of experience building headless and enterprise web applications using Vue.js, Nuxt.js, and TypeScript. Led frontend delivery across enterprise SPA platforms, reusable component libraries, and Vue 2 → Vue 3 migrations, while mentoring engineers and driving code review and testing standards. Experienced collaborating with cross-functional and distributed engineering teams in Agile/Scrum environments.',
-
+      'Senior Frontend Engineer with 8+ years of experience building enterprise and headless web applications using Vue.js, Nuxt.js, and TypeScript, with exposure to Shopify Hydrogen for modern headless commerce solutions. Led frontend delivery across enterprise SPA platforms, reusable component libraries, and Vue 2 → Vue 3 migrations, while mentoring engineers and driving code review and testing standards. Experienced collaborating with cross-functional and distributed engineering teams in Agile/Scrum environments.',
     skills: [
       {
         title: 'Frontend Ecosystem',
         technologies: [
           'Vue',
-          'Nuxt',
           'Vuex',
           'Pinia',
           'Vue Router',
@@ -41,6 +39,8 @@
         title: 'Headless & Architecture',
         technologies: [
           'Headless Architecture',
+          'Hydrogen',
+          'Nuxt',
           'Component Driven Development',
           'Reusable Components',
           'Storybook',
@@ -104,6 +104,7 @@
             designation: 'UI Developer',
             duration: '2024-02 – 2025-06',
             responsibilities: [
+              'Worked with Shopify Hydrogen, React, GraphQL, and the Shopify Storefront API to build performant headless storefront',
               'Built Shopify Plus storefronts from scratch, converting UI designs into configurable, reusable Shopify themes and sections in close collaboration with UX designers and clients.',
               'Integrated Shopify Admin and Storefront APIs to support custom storefront functionality.',
               'Optimized storefront performance and Core Web Vitals with a mobile-first approach, improving SEO performance by approximately 20% and lifting Lighthouse scores.',
@@ -202,15 +203,15 @@
   <main class="resume">
     <!-- ================= Hero ================= -->
 
-    <header class="flex flex-row justify-between">
+    <header class="flex flex-row justify-between mb-4">
       <div>
         <h1 class="text-2xl text-primary">{{ resume.personal.name }}</h1>
 
         <h2 class="text-lg">{{ resume.personal.title }}</h2>
-        <span class="text-sm">({{ resume.personal.location }})</span>
+        <span class="content">({{ resume.personal.location }})</span>
       </div>
 
-      <div class="flex text-right flex-col">
+      <div class="flex text-right flex-col content">
         <a :href="`tel:${resume.personal.phone}`">
           {{ resume.personal.phone }}
         </a>
@@ -231,16 +232,16 @@
     <!-- ================= Summary ================= -->
 
     <Section title="Summary">
-      <p>{{ resume.summary }}</p>
+      <p class="content">{{ resume.summary }}</p>
     </Section>
 
     <!-- ================= Skills ================= -->
 
     <Section title="Skills">
       <div v-for="skill in resume.skills" :key="skill.title">
-        <span class="font-semibold">{{ skill.title }} - </span>
+        <span class="font-semibold content">{{ skill.title }} - </span>
 
-        <span>
+        <span class="content">
           {{ skill.technologies.join(', ') }}
         </span>
       </div>
@@ -261,7 +262,7 @@
           </template>
         </Heading>
 
-        <ol class="list-disc list-inside">
+        <ol class="list-disc list-inside content">
           <li v-for="item in project.responsibilities" :key="item">
             {{ item }}
           </li>
@@ -277,7 +278,7 @@
           {{ education.degree }}
 
           <template #extra>
-            <span>
+            <span class="content">
               {{ education.institute }}
               (<small>{{ education.duration }}</small
               >)
@@ -290,7 +291,7 @@
     <!-- ================= Certifications ================= -->
 
     <Section title="Certifications">
-      <ol class="list-disc list-inside">
+      <ol class="list-disc list-inside content">
         <li v-for="certification in resume.certifications" :key="certification">
           {{ certification }}
         </li>
