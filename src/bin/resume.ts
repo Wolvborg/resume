@@ -10,7 +10,7 @@ const resume = [
       github: 'https://github.com/Wolvborg',
     },
     summary:
-      'Senior Frontend Engineer with 8+ years of experience building scalable frontend architectures, enterprise applications, and reusable component libraries using React.js, TypeScript, and Vue.js. Deep experience with Zustand and TanStack Query for client-state and server-state management, GraphQL integration, and Node.js/Python/Flask backend services supporting frontend platforms. Proven track record leading a frontend team of 4, mentoring engineers, conducting code reviews, and driving technical decisions across enterprise codebases. Built and maintained Storybook-based component libraries, established Cypress end-to-end testing frameworks, and contributed to a Vue 2 to Vue 3 migration. Experienced integrating AI/LLM APIs into production platforms, with strong focus on performance optimization, Core Web Vitals, and cross-functional collaboration in Agile environments.',
+      'Senior Frontend Engineer with 8+ years of experience specializing in React.js, TypeScript, and modern frontend architecture, with additional expertise in Vue.js. Experienced in building scalable enterprise applications, reusable component libraries, and high-performance web platforms using React, Zustand, TanStack Query, GraphQL, and Node.js. Led and mentored a frontend team of 4, drove architectural decisions, and delivered initiatives including AI/LLM integrations, Vue 2 → Vue 3 migration, automated testing, and performance optimization.',
     skills: [
       {
         title: 'Languages',
