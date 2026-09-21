@@ -13,5 +13,7 @@ export default defineConfig({
   },
   define: {
     'import.meta.env.VITE_APP_VERSION': JSON.stringify(packageJson.version.replaceAll('.', '-')),
+    'import.meta.env.VITE_DATE':
+      new Date().getUTCFullYear() + ' ' + new Date().toLocaleString('en-US', { month: 'short' }),
   },
 });

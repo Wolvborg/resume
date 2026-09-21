@@ -78,7 +78,7 @@
 
     <!-- ================= Education ================= -->
 
-    <Section title="Education">
+    <!-- <Section title="Education">
       <article v-for="education in resume.education" :key="education.degree">
         <Heading>
           {{ education.degree }}
@@ -92,16 +92,16 @@
           </template>
         </Heading>
       </article>
-    </Section>
+    </Section> -->
 
     <!-- ================= Certifications ================= -->
 
-    <!-- <Section title="Certifications">
+    <Section title="Certifications">
       <ol class="list-disc list-inside content">
         <li v-for="certification in resume.certifications" :key="certification">
           {{ certification }}
         </li>
       </ol>
-    </Section> -->
+    </Section>
   </main>
 </template>
