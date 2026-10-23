@@ -2,7 +2,7 @@
   import ExperienceSection from './components/experience-section.vue';
   import Heading from './components/heading.vue';
   import Section from './components/section.vue';
-  import resume from './bin/resume';
+  import resume from './bin/react.js';
 </script>
 
 <template>
